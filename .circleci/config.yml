@@ -43,7 +43,7 @@ jobs: # a collection of steps
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
       - add_ssh_keys:
           fingerprints:
-            - ""#todo
+            - "9e:84:71:0c:0e:44:d2:39:cd:c5:0a:87:c1:05:df:0b"
       - run:
           name: Run new docker images in ec2
           command: |
