@@ -23,7 +23,7 @@ dependencies {
 }
 
 docker {
-    name "aws-integration"
+    name "marynasydorenko/epam-training"
     files "build/libs/${bootJar.archiveFileName.get()}"
     buildArgs([JAR_FILE: bootJar.archiveFileName.get()])
     noCache true
@@ -31,7 +31,7 @@ docker {
 
 dockerRun {
     name project.name
-    image "aws-integration"
+    image "marynasydorenko/epam-training"
     ports '8080:8080'
     clean true
 }
